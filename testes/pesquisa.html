@@ -1,0 +1,22 @@
+<div id="content"></div>
+<div id='loading'></div>
+
+<script>
+
+  function carrega(){
+
+   var valor_a_passar = 10;
+   $('#loading').html("Carregando...").fadeIn('fast');
+   $.ajax({
+    type: "POST",
+    url: "nome_da_pagina.php",
+    data: "dado_para_select="+valor_a_passar,//variável passada via post
+    cache: false,
+    success: function(html){
+     $('#loading').fadeOut('fast');
+     $("#content").append(html);//mostra resultado na div content
+    }
+   });
+  };
+
+</script>
