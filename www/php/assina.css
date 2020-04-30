@@ -1,0 +1,50 @@
+body {
+ color: #424242;
+ font-size: 14px;
+ font-family: 'Poppins', sans-serif;
+ line-height: 1.80857;
+}
+
+b {
+ color: #424242;
+ font-size: 20px;
+ font-style: bold;
+ font-family: 'Poppins', sans-serif;
+ line-height: 1.80857;
+}
+
+#tabela {
+ width: 95%;
+ color: #424242;
+ font-size: 16px;
+ font-style: bold;
+ font-family: 'Poppins', sans-serif;
+ line-height: 1.80857;
+/* border: 1px solid black;*/
+ border: none;
+ background: #FFFFF0;
+ border-spacing: 15px 5px;
+ table-layout: fixed
+}
+
+#header {
+ width: 97%;
+ margin: 20 auto;
+ background:#ffffff;
+}
+
+#content {
+ width: 97%;
+ height: auto;
+ margin: 20 auto;
+ background: #fafafa;
+}
+
+#foot {
+ width: 97%;
+ height: 50px;
+ margin: 20 auto;
+ text-align: center;
+ border: 3px solid red;
+ background: #ffffff;
+}

@@ -1,6 +1,6 @@
 let btn = document.querySelector("#btn");
 let list = document.querySelector("#list");
-
+btn.addEventListener("")
 btn.addEventListener("click", function() {
   fetch('https://reqres.in/api/users?page=2')
     .then(function(response) {

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Site Metas -->
+    <title>dogmo - Segurança no mundo real</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/assina.js"></script>
+
+</head>
+<body id="page-top" class="politics_version">
+
+  <div class="page-header">
+    <br><center><img class="img-fluid" src="logo.png" width=150px/></center>
+  </div>
+  <br>
+
+  <div class="container">
+
+    <div id="documento" class="section db">
+      <div class="container">
+        <div class="section-title text-center">
+          <h3>Assinatura de Documento</h3>
+          <p>Você está aqui para assinar um documento com as seguintes informações:</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+
+      <div id="phpdadospessoa"></div>
+
+      <div class="panel-heading"><h5>Informações de quem produziu o documento:</h5></div>
+        <table class="table table-bordered">
+          <tr><td class="text-right">Nome: </td><td><div id="nomepessoaprod"></div></td></tr>
+          <tr><td class="text-right">CPF ou CNPJ: </td><td><div id="cpfcnpjpessoaprod"> 989.032.769-49</div></td></tr>
+          <tr><td class="text-right">Endereço: </td><td><div id="enderecopessoaprod"> Rua João Krisch, 517</div></td></tr>
+          <tr><td class="text-right">CEP: </td><td><div id="ceppessoaprod"> 89.216-360</div></td></tr>
+          <tr><td class="text-right">E-mail: </td><td><div id="emailpessoaprod"> rhluckow@gmail.com</div></td></tr>
+          <tr><td class="text-right">Telefone: </td><td><div id="telefonepessoaprod"> 47 98837-9622</div></td></tr>
+          <tr><td class="text-right">Nascimento: </td><td><div id="nascimentopessoaprod"> 19/07/1977</div></td></tr>
+          <tr><td class="text-right">Estado Civil: </td><td><div id="estadocivilpessoaprod"> Casado</div></td></tr>
+          <tr><td class="text-right">Profissão: </td><td><div id="profissaopessoaprod"> Advogado</div></td></tr>
+          <tr><td class="text-right">Nacionalidade: </td><td><div id="nacionalidadepessoaprod"> Brasileiro</div></td></tr>
+        </table>
+
+        <table class="table table-bordered">
+          <div class="panel-heading"><h5>Informações do documento:</h5></div>
+          <tr><td class="text-right">Titulo: </td><td><div id="nome_dono"> Contrato de Compra e Venda de Imóvel</div></td></tr>
+          <tr><td class="text-justified" colspan="2">Teor do documento:<br><br>asdfasdfasdfasd<br>adsfadsfadsfsdf<br>asdfasdfasdfasdfdas </td></tr>
+        </table>
+
+      </div>
+
+      <form>
+        <div class="panel-heading"><h5>Confirme seus dados:</h5></div>
+
+        <div class="form-group">
+          <label for="nomepessoa">Nome</label>
+          <input type="text" class="form-control" id="nomedestino" placeholder="Nome">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">CPF/CNPJ</label>
+          <input type="text" class="form-control" id="documentopessoa" placeholder="CPF ou CNPJ">
+        </div>
+        <div class="form-group">
+          <label for="enderecodestino">Endereço</label>
+          <input type="text" class="form-control" id="enderecopessoa" placeholder="Endereço">
+        </div>
+        <div class="form-group">
+          <label for="ceppessoa">CEP</label>
+          <input type="text" class="form-control" id="ceppessoa" placeholder="CEP">
+        </div>
+        <div class="form-group">
+          <label for="emailpessoa">E-mail</label>
+          <input type="email" class="form-control" id="emailpessoa" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+          <label for="telefonepessoa">Telefone</label>
+          <input type="text" class="form-control" id="telefonepessoa" placeholder="Telefone">
+        </div>
+        <div class="form-group">
+          <label for="nascimentopessoa">Data de Nascimento</label>
+          <input type="date" class="form-control" id="nascimentopessoa" placeholder="Nascimento">
+        </div>
+        <div class="form-group">
+          <label for="estadocivilpessoa">Estado Civil</label>
+          <div class="radio-inline">
+            <label><input type="radio" name="optionsRadios" id="estadocivilpessoa" value="1" checked>Casado(a)</label>
+          </div>
+          <div class="radio-inline">
+            <label><input type="radio" name="optionsRadios" id="estadocivilpessoa" value="2">Solteiro(a)</label>
+          </div>
+          <div class="radio-inline">
+            <label><input type="radio" name="optionsRadios" id="estadocivilpessoa" value="3">Divorciado(a)</label>
+          </div>
+          <div class="radio-inline">
+            <label><input type="radio" name="optionsRadios" id="estadocivilpessoa" value="4">Viuvo(a)</label>
+          </div>
+
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="profissaopessoa">Profissão</label>
+          <input type="text" class="form-control" id="profissaopessoa" placeholder="Profissão">
+        </div>
+        <div class="form-group">
+          <label for="nacionalidadepessoa">Nacionalidade</label>
+          <input type="text" class="form-control" id="nacionalidadepessoa" placeholder="Nacionalidade">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Aceito o documento acima em todos os seus termos.
+          </label>
+        </div>
+        <button type="button" class="btn btn-default btn-lg" id="botao" onclick="buscadadosdocumento()">
+          <img src="icons/pen.svg" alt="" width="32" height="32" title="Bootstrap">
+          Assinar documento
+        </button>
+      </form>
+
+      </div>
+
+    </div>
+  </div>
+  <br><br><br>
+
+
+  <script src="js/botstrap.js"></script>
+  <script src="js/jquery-3.5.0.js"></script>
+
+
+
+
+</body>

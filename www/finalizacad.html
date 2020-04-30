@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Site Metas -->
+    <title>dogmo - Segurança no mundo real</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body id="page-top" class="politics_version">
+
+  <div class="page-header">
+    <br><center><img class="img-fluid" src="images/logo.png" width=150px/></center>
+  </div>
+  <br>
+
+  <div class="container">
+
+    <div id="documento" class="section db">
+      <div class="container">
+        <div class="section-title text-center">
+          <h4>Finalização de Cadastro</h4>
+          <p><br><h6>Você está aqui para finalizar seu cadastro.<br>Preencha o restante dos dados e siga os procedimentos de segurnaça.</h6></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+
+      <div id="phpdadospessoa"></div>
+
+      <form id="formcadastro" data-toggle="validator" role="form">
+        <div class="panel-heading"><h6>Complete e confirme seus dados:</h6></div>
+        <div class="form-group">
+          <label for="nome_pessoa">Nome</label>
+          <input type="text" class="form-control" id="nome_pessoa" placeholder="Digite seu nome..." required>
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <label for="documento_pessoa">CPF/CNPJ</label>
+          <input type="text" class="form-control" id="documento_pessoa" size="15" maxlength="15" placeholder="Digite seu CPF ou CNPJ..." required>
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <label for="endereco_pessoa">Endereço</label>
+          <input type="text" class="form-control" id="endereco_pessoa" placeholder="Digite seu endereço..." requires>
+        </div>
+        <div class="form-group">
+          <label for="cep_pessoa">CEP</label>
+          <input type="text" class="form-control" id="cep_pessoa" placeholder="Digite seu CEP..." required>
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <label for="email_pessoa">E-mail</label>
+          <input type="email" class="form-control" id="email_pessoa" placeholder="Digite seu email" data-error="Por favor, informe um e-mail correto." required>
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <label for="telefone_pessoa">Telefone</label>
+          <input type="tel" class="form-control" id="telefone_pessoa" placeholder="Telefone">
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <label for="nascimento_pessoa">Data de Nascimento</label>
+          <input type="date" class="form-control" id="nascimento_pessoa" placeholder="Nascimento">
+          <div class="help-block with-errors"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="estadocivil_pessoa">Estado Civil</label>
+          <div class="radio-inline">
+            <label><input type="radio" name="estadocivil_pessoa" id="estadocivil_pessoa1" value="1" checked>Casado(a)</label>
+          </div>
+          <div class="radio-inline">
+            <label><input type="radio" name="estadocivil_pessoa" id="estadocivil_pessoa2" value="2">Solteiro(a)</label>
+          </div>
+          <div class="radio-inline">
+            <label><input type="radio" name="estadocivil_pessoa" id="estadocivil_pessoa3" value="3">Divorciado(a)</label>
+          </div>
+          <div class="radio-inline">
+            <label><input type="radio" name="estadocivil_pessoa" id="estadocivil_pessoa4" value="4">Viuvo(a)</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="profissao_pessoa">Profissão</label>
+          <input type="text" class="form-control" id="profissao_pessoa" placeholder="Profissão">
+        </div>
+        <div class="form-group">
+          <label for="nacionalidade_pessoa">Nacionalidade</label>
+          <input type="text" class="form-control" id="nacionalidade_pessoa" placeholder="Nacionalidade">
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <br><input type="checkbox" id="check_pessoa" name="check_pessoa" value="aceito" unchecked> Confirmo que as informações prestadas são verdadeiras.
+          </label>
+        </div>
+        <button type="button" class="btn btn-default btn-lg" id="botaocadastra" onclick="gravacadastro()">
+          <img src="icons/pen.svg" alt="" width="32" height="32" title="Bootstrap">
+          Assinar documento
+        </button>
+      </form>
+
+      </div>
+
+    </div>
+  </div>
+  <br><br><br>
+
+  <script src="js/botstrap.js"></script>
+  <script src="js/jquery-3.5.0.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/validator.min.js"></script>
+  <script src="js/finalizacad.js"></script>
+</body>

@@ -1,8 +1,8 @@
 ##### LOCAWEB - NAO REMOVER #####
 AddHandler php56-script .php
-suPHP_ConfigPath /home/dogmo1/
+suPHP_ConfigPath /home/dogmo1
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . prev/php/assina.php [L]
+RewriteRule . php/direciona.php [L]
 ##### LOCAWEB - NAO REMOVER #####
